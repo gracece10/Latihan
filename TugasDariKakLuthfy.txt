@@ -1,0 +1,46 @@
+1. 
+Yang Singkatnya begini : 
+Cara kerja javascript hanya memerlukan interpreter sehingga tidak membutuhkan compiler
+agar bisa menjalankannya. Bahkan, cara kerja Javascript biasanya di embeded ke halaman
+website secara langsung atau diarahkan dengan file javascript terpisah.
+
+Yang Detailnya begini :
+Cara kerja javascript bisa dilihat dari 2 sisi, yaitu dari sisi client dan sisi server.
+Di sisi client, javascript dapat berperan dalam mengubah tampilan website.
+ketika pengunjung membuka halaman website,script akan terunduh dan mulai di jalankan browser.
+Jadi, prosesnya tidak dilakukan diweb server. Karena bekerja dari sisi client atau browser,
+jika browser pengunjung tidak mendukung javascript
+tampilan halaman website diperangkat pengunjung bisa berbeda.
+kalau di sisi server, Javascript lebih banyak digunakan untuk kebutuhan database.
+Cara kerjanya hampir sama dengan bahasa pemrograman sisi server lainnya, seperti c# atau java.
+
+
+2.Tipe data null mempresentasikan "tidak memiliki nilai apapun".
+Variabel yang memiliki nilai null menandakan bahwa variabel tsb
+tdk menunjuk pada object/nilai apapun.
+undefined-> setiap variabel yang dideklarasikan dan di-assign nilai
+pasti pernah memiliki nilai "undefined" krna pada dasarny JavaScript
+memisahkan proses deklarasi dan assignment. Pada saat pertama kali
+dideklarasikan variabel akan berisi "undefined" sebelum kemudian 
+digantikan oleh nilai yang diberikan.
+
+3.
+- Var bersifat global,dapat diubah dimana pun. memiliki sifat hoisting dan dapat 
+dideklarasikan ulang dimana pun.
+- Let bersifat scoop area, dapat diubah. Tidak dapat dideklarasikan ulang.
+- Const bersifat scoop area, immutable(tidak dapat dirubah), tidak dapat
+dideklarasikan ulang. Biasa digunakan untuk object\
+
+singkatnya : var dan let bisa terdeklarasi tanpa value (undefined),
+tapi const harus terdeklarasikan beserta valuenya. Kemudian dalam scope yang sama,
+'var' dan 'let' value bisa berubah, 'const' tidak.
+
+4.
+mode strict memudahkan penulisan Js secara "aman" dan mencegah JS melakukan sesuatu dibelakang layar.
+sbg contoh dalam JS normal salah mengetik nama variabel akan membuat variabel global baru.
+Dalam mode strict, ini akan memunculkan kesalahan sehingga tidak mungkin membuat variabel
+global secara tdk sengaja. Dlm JS normal, pengembang tdk akan menerima umpan balik
+kesalahan yang menetapkan nilai ke properti yang tdk dapat ditulis.
+Dalam mode strict, stiap penugasan ke properti yang tdk dapat ditulis, properti khusus pengambil,
+properti yang tdk ada, variabel yang tdk ada, atau objek yang tdk ada, akan memunculkan
+kesalahan.
